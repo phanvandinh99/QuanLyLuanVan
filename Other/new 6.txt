@@ -1,0 +1,61 @@
+hệ thống quản lý hội đồng luận văn tốt nghiệp đại học
+
+
+Khoa (MaKhoa, TenKhoa)
+Nganh (MaNganh, TenNganh, MaKhoa)
+Lop (MaLop, TenLop, MaNganh)
+SinhVien (MSV, HoSinhVien, TenSinhVien, NgaySinh, Email, SDT, DiemLuanVan, MaLop, MaNhom)
+HoiDong (MaHoiDong, TenHoiDong, NgayBaoVeLuanVan)
+Quyen (MaQuyen, TenQuyen)
+GiaoVien (MaGV, HoGV, TenGV, NgaySinh, Email, SDT, MaNganh, MaHoiDong)
+DeTai (MaDeTai, TenDeTai, MoTa, MaGiaoVien)
+Nhom (MaNhom, TenNhom, MaDeTai)
+Phong (MaPhong, TenPhong)
+GiaoVien_HoiDong (MaGiaoVien, MaHoiDong, MaPhong, ThoiGianBaoVe)
+BaoCaoTuan (MaBaoCaoTuan, TenBaoCaoTuan, NoiDungBaoCao, MoTaBaoCao, NgayBaoCao)
+ChiTiet_BaoCaoTuan (MaChiTet, MaNhom, MaDeTai, NoiDungHoanThanh, NoiDungCanLamTuanToi, DiemSo, NgayBaoCao)
+
+
+Tuần 1: Trao đổi trực tiếp (Fix đề tài, trao đổi bọi dung thực hiện và giải đáp)
+Tuần 2&3: Giới thiệu mô hình CDM cơ bản
+Tuần 4&5: Sửa lược đồ CSDL dạng bảng và tiếp tục hoàn thiện CSDL (CDM, LDM, PDM)
+Tuần 6&7: Template Document
+Tuần 8&9: Thiết kế giao diện
+Tuần 10&11: Giao diện ứng dụng
+Tuần 12&13: Sửa tổng quan toàn hệ thống & AI vào ứng dụng
+Tuần 14&15: Chỉnh sửa và hoàn thành document
+Tuần 16: Nộp Drive document - Demo video - Chuẩn bị báo cáo
+
+
+
+
+Xây dựng chức năng:
+
+# Trưởng Khoa:
+	Quản lý giáo viên (thêm, sửa, xoá giáo viên)
+	Quản lý sinh viên (thêm, sửa, xoá sinh viên, có nhập sinh viên từ file excel)
+	Phân chia giáo viên hướng dẫn với sinh viên (Ví dụ: kì này có 100sv làm luận văn. Có 5 cán bộ giáo viên thì => 100/5 20. Mỗi giáo viên sẽ hướng dẫn 20 bạn)
+	Phân chia hội đồng bảo vệ luận văn với yêu cầu. Cán bộ giáo viên hướng dẫn sinh viên không cùng 1 hội đồng (Ví dụ: Sinh viên Nguyễn Văn A được giáo viên Tâm hướng dẫn làm luận văn thì lúc bảo vệ sinh viên Nguyễn Văn A và Tâm không cùng chung 1 hội đồng)
+	Các đề tài cần chia đều nhau (TH: có 6 đề tài web bán điện thoại, 3 hội đồng thì mỗi hội đồng đc 2 đề tài bán điện thoại)
+	Tính điểm tổng của luận văn.
+# Cán Bộ Giáo Viên:
+	Xem danh sách sinh viên đảm nhận hướng dẫn theo học kì.
+	Tạo báo cáo theo tuần (Mục đích để hướng dẫn sinh viên: Ví dụ: gợi ý chọn đề tài, cách code, các chức năng... nó giống như các nhiệm vụ hằng tuần mà cô gửi ý)
+	Điểm danh, chấm điểm theo tuần và duyệt có được bảo vệ hay không?
+# Sinh Viên:
+	Đăng nhập, đổi mật khẩu
+	Xác nhận báo cáo theo tuần (Báo cáo với giáo viên tuần này đã làm được những gì? các phần chưa làm được, Khó khăn...
+	Xem điểm báo cáo theo tuần
+	Xem hội đồng bảo vệ (Phòng nào, lúc mấy giờ, Giáo viên hội đồng gồm những ai)
+	Xem điểm tổng kết
+
+Ví dụ sơ đồ: https://www.slideshare.net/trongthuy3/luan-van-phan-mem-quan-li-thong-tin-sinh-vien-hot-9d
+Template: https://preview.themeforest.net/item/kidschool-kids-kindergarder-school-html-template/full_screen_preview/19572046?_ga=2.233427993.649903789.1709515369-812127996.1705288583
+
+
+
+Nguyễn Anh Thư
+B1906407
+01-05-2001
+
+Mai Thị Cẩm Nhung
